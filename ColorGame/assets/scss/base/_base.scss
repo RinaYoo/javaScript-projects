@@ -1,0 +1,43 @@
+// -----------------------
+// Variables
+// -----------------------
+$color-white: #fff;
+$color-black: #232323;
+$color-blue: #4682B4;
+
+$transition-timing: 0.2s linear;
+
+// -----------------------
+// Mixins
+// -----------------------
+@mixin flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin container {
+  width: 40%;
+  min-width: 380px;
+  max-width: 850px;
+  margin: auto; 
+}
+
+// -----------------------
+// General Styles
+// -----------------------
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem sans-serif;
+  background-color: $color-black;
+}

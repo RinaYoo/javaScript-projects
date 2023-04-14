@@ -1,0 +1,50 @@
+/* 1324px ~ 1728px */
+/* L Mobile Large Laptop & Small Desktop */
+@media only screen and (min-width: 1728px) {
+  html {
+    font-size: 64%;
+  }
+
+  .color-list {
+    row-gap: 3rem;
+    &__item {
+      height: 20rem;
+    }
+  }
+}
+
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 68%;
+  }
+}
+
+/* 2500px ~ */
+/* XL 4k TV */
+@media only screen and (min-width: 2500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// Default work done at 1263px
+/* 848px ~ 1323px */
+/* M Mobile Tablet Landscape & Small Laptop */
+
+/* 403px ~ 847px */
+/* S Mobile Landscape & Table Portrait */
+@media only screen and (max-width: 847px) {
+  html {
+    font-size: 48%;
+  }
+
+}
+
+/* 0 ~ 402px */
+/* XS Mobile Portrait */
+@media only screen and (max-width: 402px) {
+  html {
+    font-size: 42%;
+  }
+}
