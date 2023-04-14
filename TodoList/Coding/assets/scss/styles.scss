@@ -1,0 +1,153 @@
+// -----------------------
+// General Styles
+// -----------------------
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem sans-serif;
+  color: #444;
+  background-image: linear-gradient(to right, #3d7eaa, #fee37a);
+}
+
+// -----------------------
+// Variables
+// -----------------------
+$text-padding: 1rem 2rem;
+
+// -----------------------
+// Container Styles
+// -----------------------
+.container {
+  width: 35%;
+  max-width: 900px;
+  margin: 15vh auto;
+
+  &__input {
+    color: #2980b9;
+    background-color: #eee;
+    padding: $text-padding;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 1.8rem;
+    width: 100%;
+
+    &:focus {
+      border-color: #2980b9;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: color 0.2s linear;
+
+    &:nth-of-type(even) {
+      background-color: #eee;
+    }
+
+    &--deleted {
+      color: rgba(#444, 0);
+    }
+  }
+
+  &__content {
+    &--completed {
+      text-decoration: line-through;
+      color: rgba(#444, 0.7);
+    }
+  }
+
+  &__icon {
+    background-color: #e74c3c;
+    opacity: 0.7;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--deleted {
+      opacity: 0;
+    }
+  }
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #2980b9;
+  padding: $text-padding;
+}
+
+// -----------------------
+// Media Styles
+// -----------------------
+
+/* 2500px ~ */
+/* XL 4k TV */
+@media only screen and (min-width: 2500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* 1920px */
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 1324px ~ 1728px */
+/* L Mobile Large Laptop & Small Desktop */
+@media only screen and (max-width: 1728px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+// Default work done at 1263px
+/* 848px ~ 1323px */
+/* M Mobile Tablet Landscape & Small Laptop */
+
+
+/* 403px ~ 847px */
+/* S Mobile Landscape & Table Portrait */
+@media only screen and (max-width: 847px) {
+  html {
+    font-size: 48%;
+  }
+
+  .container {
+    width: 60%;
+  }
+}
+
+/* 0 ~ 402px */
+/* XS Mobile Portrait */
+@media only screen and (max-width: 402px) {
+  html {
+    font-size: 42%;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
